@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>John Doe | Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+
+  <!-- CSS File -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="John Doe - Web Developer Portfolio showcasing projects, skills, and contact information." />
+  <meta property="og:title" content="John Doe | Web Developer Portfolio" />
+  <meta property="og:description" content="Modern web developer specializing in clean, responsive UI." />
+  <meta property="og:image" content="images/profile.jpg" />
+  <meta property="og:type" content="website" />
+</head>
+
+<body>
+  <header>
+    <nav aria-label="Main Navigation">
+      <h2>My Portfolio</h2>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- About Section -->
+    <section id="about" class="box">
+      <img src="images/profile.jpg" class="pic" alt="Profile picture of John Doe" />
+      <h1>John Doe</h1>
+      <p>Web developer with a passion for clean and modern UI.</p>
+    </section>
+
+    <hr />
+
+    <!-- Projects Section -->
+    <section id="projects" class="box">
+      <h2>Projects</h2>
+      <p>Some of my recent work.</p>
+      <button class="btn" onclick="window.open('https://github.com/','_blank')">View GitHub</button>
+    </section>
+
+    <hr />
+
+    <!-- Skills Section -->
+    <section id="skills" class="box">
+      <h2>Technical Skills</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Skill</th>
+            <th>Level</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>HTML/CSS</td><td>Advanced</td></tr>
+          <tr><td>JavaScript</td><td>Intermediate</td></tr>
+          <tr><td>Python</td><td>Intermediate</td></tr>
+          <tr><td>React</td><td>Beginner</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <hr />
+
+    <!-- Contact Section -->
+    <section id="contact" class="box">
+      <h2>Contact Me</h2>
+      <form>
+        <label>
+          Name:
+          <input type="text" name="name" placeholder="Your name" required />
+        </label>
+        <label>
+          Email:
+          <input type="email" name="email" placeholder="Your email" required />
+        </label>
+        <label>
+          Message:
+          <textarea name="message" placeholder="Your message" required></textarea>
+        </label>
+        <button class="btn" type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 John Doe</p>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <a href="#top" id="top">⬆</a>
+
+  <!-- Optional Smooth Scroll -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</body>
+</html>
